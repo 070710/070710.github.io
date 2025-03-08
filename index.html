@@ -12,17 +12,32 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
       }
       .page h1 {
         color: #fff;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Makes the text pop */
-        text-align: center;
+      }
+      .page a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        margin-top: 20px;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.3); /* Slight background for better visibility */
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+      }
+      .page a:hover {
+        background-color: rgba(0, 0, 0, 0.5); /* A subtle hover effect */
       }
     </style>
   </head>
   <body>
     <div class="page">
       <h1>Welcome to Joanne's Homepage</h1>
+      <a href="page1.html">Go to Page 1</a>
     </div>
   </body>
 </html>
