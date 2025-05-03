@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 06-01</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Practical 06-01</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Uppercase</th>
+                <th scope="col">Lowercase</th>
+                <th scope="col">A</th>
+                <th scope="col">B</th>
+                <th scope="col">C</th>
+                <th scope="col">a</th>
+                <th scope="col">b</th>
+                <th scope="col">c</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Arabic</th>
+                <td>1</td><td>A1</td><td>B1</td><td>C1</td><td>a1</td><td>b1</td><td>c1</td>
+            </tr>
+            <tr>
+                <td>2</td><td>A2</td><td>B2</td><td>C2</td><td>a2</td><td>b2</td><td>c2</td>
+            </tr>
+            <tr>
+                <td>3</td><td>A3</td><td>B3</td><td>C3</td><td>a3</td><td>b3</td><td>c3</td>
+            </tr>
+            <tr>
+                <th scope="row">Roman</th>
+                <td>I</td><td>AI</td><td>BI</td><td>CI</td><td>aI</td><td>bI</td><td>cI</td>
+            </tr>
+            <tr>
+                <td>II</td><td>AII</td><td>BII</td><td>CII</td><td>aII</td><td>bII</td><td>cII</td>
+            </tr>
+            <tr>
+                <td>III</td><td>AIII</td><td>BIII</td><td>CIII</td><td>aIII</td><td>bIII</td><td>cIII</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
