@@ -6,16 +6,23 @@
     <title>Practical 06-01</title>
     <style>
         table {
-            width: 50%;
+            width: 75%; /* Slightly wider for better spacing */
             border-collapse: collapse;
         }
         th, td {
-            border: 1px solid black;
+            border: 1px solid black; /* Keeps the outline */
             padding: 8px;
-            text-align: center;
+            text-align: left; /* Aligns everything to the left */
         }
         th {
             background-color: #f2f2f2;
+            vertical-align: top; /* Moves Arabic/Roman closer to upper line */
+        }
+        td {
+            width: 220px; /* Adjusted for a more narrow yet wider blank space */
+        }
+        .bold {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -26,36 +33,35 @@
     <table>
         <thead>
             <tr>
-                <th scope="col">Uppercase</th>
-                <th scope="col">Lowercase</th>
-                <th scope="col">A</th>
-                <th scope="col">B</th>
-                <th scope="col">C</th>
-                <th scope="col">a</th>
-                <th scope="col">b</th>
-                <th scope="col">c</th>
+                <th colspan="2" rowspan="2" style="width: 40px;"></th> <!-- Further narrowed blank space -->
+                <th colspan="3" style="text-align: left;">Uppercase</th>  
+                <th colspan="3" style="text-align: left;">Lowercase</th>
+            </tr>
+            <tr>
+                <th style="text-align: left;">A</th><th style="text-align: left;">B</th><th style="text-align: left;">C</th>
+                <th style="text-align: left;">a</th><th style="text-align: left;">b</th><th style="text-align: left;">c</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th scope="row">Arabic</th>
-                <td>1</td><td>A1</td><td>B1</td><td>C1</td><td>a1</td><td>b1</td><td>c1</td>
+                <th rowspan="3">Arabic</th>
+                <td class="bold">1</td><td>A1</td><td>B1</td><td>C1</td><td>a1</td><td>b1</td><td>c1</td>
             </tr>
             <tr>
-                <td>2</td><td>A2</td><td>B2</td><td>C2</td><td>a2</td><td>b2</td><td>c2</td>
+                <td class="bold">2</td><td>A2</td><td>B2</td><td>C2</td><td>a2</td><td>b2</td><td>c2</td>
             </tr>
             <tr>
-                <td>3</td><td>A3</td><td>B3</td><td>C3</td><td>a3</td><td>b3</td><td>c3</td>
+                <td class="bold">3</td><td>A3</td><td>B3</td><td>C3</td><td>a3</td><td>b3</td><td>c3</td>
             </tr>
             <tr>
-                <th scope="row">Roman</th>
-                <td>I</td><td>AI</td><td>BI</td><td>CI</td><td>aI</td><td>bI</td><td>cI</td>
+                <th rowspan="3">Roman</th>
+                <td class="bold">I</td><td>AI</td><td>BI</td><td>CI</td><td>aI</td><td>bI</td><td>cI</td>
             </tr>
             <tr>
-                <td>II</td><td>AII</td><td>BII</td><td>CII</td><td>aII</td><td>bII</td><td>cII</td>
+                <td class="bold">II</td><td>AII</td><td>BII</td><td>CII</td><td>aII</td><td>bII</td><td>cII</td>
             </tr>
             <tr>
-                <td>III</td><td>AIII</td><td>BIII</td><td>CIII</td><td>aIII</td><td>bIII</td><td>cIII</td>
+                <td class="bold">III</td><td>AIII</td><td>BIII</td><td>CIII</td><td>aIII</td><td>bIII</td><td>cIII</td>
             </tr>
         </tbody>
     </table>
